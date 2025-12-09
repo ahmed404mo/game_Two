@@ -15,7 +15,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* 👇 التعديل هنا: ضفنا basename عشان الراوتر يعرف اسم الريبو */}
+      <BrowserRouter basename="/game_Two">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/game" element={<Game />} />
